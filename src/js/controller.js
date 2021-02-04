@@ -172,6 +172,10 @@ const contropAddrecipe = async function(newrecipe) {
     }, 2000);
 }
 
+const newfeature = function() {
+    console.log('welcome to the applaication');
+}
+
 // subscriber fn for recipeview
 const init = function() {
     bookmarkview.addhandlerrenderbook(controllerbookmarks);
@@ -181,6 +185,6 @@ const init = function() {
     searchview.addhandlersearch(controlSearchResults);
     paginationview.addhandlerclick(gotopage);
     addrecipeview.addhandlerupload(contropAddrecipe);
-    // console.log('Welcome!');
+    newfeature();
 };
 init();
